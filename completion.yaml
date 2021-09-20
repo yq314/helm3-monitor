@@ -1,0 +1,17 @@
+commands:
+  - name: monitor
+    flags:
+      - dry-run
+      - force
+      - interval
+      - i
+      - no-hooks
+      - timeout
+      - rollback-timeout
+      - v
+      - wait
+      - error-on-rollback
+    commands:
+      - name: prometheus
+        flags:
+          - prometheus

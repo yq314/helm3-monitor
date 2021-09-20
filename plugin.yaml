@@ -1,0 +1,12 @@
+name: "monitor"
+version: "0.1.0"
+usage: "monitor and rollback in case of failure based on metrics or logs"
+description: |-
+  Monitor a release by querying Prometheus at a
+  given interval and take care of rolling back to the previous version if the
+  query return a non-empty result.
+ignoreFlags: false
+command: "$HELM_PLUGIN_DIR/bin/helm3-monitor"
+#hooks:
+#  install: "cd $HELM_PLUGIN_DIR; scripts/install_plugin.sh"
+#  update: "cd $HELM_PLUGIN_DIR; scripts/install_plugin.sh"

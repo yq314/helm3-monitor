@@ -1,0 +1,15 @@
+server:
+  service:
+    type: LoadBalancer
+
+kubeStateMetrics:
+  enabled: false
+
+alertmanager:
+  enabled: false
+
+nodeExporter:
+  enabled: false
+
+pushgateway:
+  enabled: false

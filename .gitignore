@@ -13,3 +13,13 @@
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
+
+# IDEs
+.idea/
+.vscode/
+
+.DS_Store
+
+bin/
+releases/
+helm3-monitor
