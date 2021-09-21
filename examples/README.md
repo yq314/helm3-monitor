@@ -22,7 +22,7 @@ Install Infrabin
 helm upgrade -i infrabin --set image.tag=0.9.0 -f ./infrabin.yml ./charts/infrabin
 ```
 
-Upgrade Infrabin
+Upgrade Infrabin (to create a new release)
 ```shell
 helm upgrade -i infrabin --set image.tag=0.9.1 -f ./infrabin.yml ./charts/infrabin
 ```
