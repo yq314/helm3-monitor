@@ -94,7 +94,7 @@ func (c *promCmd) run() error {
 	q.Add("query", c.query)
 	req.URL.RawQuery = q.Encode()
 
-	quit := make(chan os.Signal)
+	quit := make(chan os.Signal, 1)
 	signal.Notify(quit, syscall.SIGTERM, syscall.SIGINT)
 
 	ticker := time.NewTicker(time.Second * time.Duration(options.interval))
