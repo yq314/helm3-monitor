@@ -27,15 +27,15 @@ fi
 
 echo "$url"
 
-#mkdir -p "bin"
-#mkdir -p "releases/v${version}"
-#
-#if [ -x "$(which curl 2>/dev/null)" ]; then
-#    curl -sSL "${url}" -o "releases/v${version}.tar.gz"
-#else
-#    wget -q "${url}" -O "releases/v${version}.tar.gz"
-#fi
-#tar xzf "releases/v${version}.tar.gz" -C "releases/v${version}"
+mkdir -p "bin"
+mkdir -p "releases/v${version}"
+
+if [ -x "$(which curl 2>/dev/null)" ]; then
+    curl -sSL "${url}" -o "releases/v${version}.tar.gz"
+else
+    wget -q "${url}" -O "releases/v${version}.tar.gz"
+fi
+tar xzf "releases/v${version}.tar.gz" -C "releases/v${version}"
 mv "releases/v${version}/helm3-monitor" "bin/helm3-monitor" || \
     mv "releases/v${version}/helm3-monitor.exe" "bin/helm3-monitor"
 mv "releases/v${version}/completion.yaml" .

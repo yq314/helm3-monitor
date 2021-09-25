@@ -1,6 +1,8 @@
 builds:
   - main: main.go
     binary: helm3-monitor
+    env:
+      - CGO_ENABLED=0
     goos:
       - darwin
       - linux
