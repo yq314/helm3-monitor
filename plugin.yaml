@@ -7,6 +7,6 @@ description: |-
   query return a non-empty result.
 ignoreFlags: false
 command: "$HELM_PLUGIN_DIR/bin/helm3-monitor"
-#hooks:
-#  install: "cd $HELM_PLUGIN_DIR; scripts/install_plugin.sh"
-#  update: "cd $HELM_PLUGIN_DIR; scripts/install_plugin.sh"
+hooks:
+  install: "cd $HELM_PLUGIN_DIR; scripts/install_plugin.sh"
+  update: "cd $HELM_PLUGIN_DIR; scripts/install_plugin.sh"
