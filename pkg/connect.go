@@ -6,6 +6,12 @@ import (
 	"helm.sh/helm/v3/pkg/cli"
 	"log"
 	"os"
+
+	// Enable usage of the following providers
+	_ "k8s.io/client-go/plugin/pkg/client/auth/azure"
+	_ "k8s.io/client-go/plugin/pkg/client/auth/gcp"
+	_ "k8s.io/client-go/plugin/pkg/client/auth/oidc"
+	_ "k8s.io/client-go/plugin/pkg/client/auth/openstack"
 )
 
 var (

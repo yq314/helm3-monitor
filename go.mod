@@ -7,4 +7,5 @@ require (
 	github.com/spf13/cobra v1.2.1
 	google.golang.org/grpc v1.38.0
 	helm.sh/helm/v3 v3.7.0
+	k8s.io/client-go v0.22.2
 )
